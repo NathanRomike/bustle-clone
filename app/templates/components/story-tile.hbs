@@ -1,0 +1,10 @@
+<div class="col-md-4">
+  {{#link-to 'stories' story.id}}
+  <img src={{story.image_url}} alt={{story.headline_short}}/>
+  <h2>{{story.headline_short}}</h2>
+  {{/link-to}}
+  <div class="byline">
+    <p class="author pull-left">{{story.author}}</p>
+    <p class="timestamp pull-right">{{moment-from-now  story.creation_datetime}}</p>
+  </div>
+</div>
