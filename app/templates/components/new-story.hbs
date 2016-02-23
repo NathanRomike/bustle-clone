@@ -1,0 +1,33 @@
+<form class="new-story">
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input value=author id="author"}}
+  </div>
+
+  <div class="form-group">
+    <label for="category">Category</label>
+    {{input value=category id="category"}}
+  </div>
+
+  <div class="form-group">
+    <label for="headline_long">Headline(long)</label>
+    {{input value=headline_long id="headline_long"}}
+  </div>
+
+  <div class="form-group">
+    <label for="headline_short">Headline(short)</label>
+    {{input value=headline_short id="headline_short"}}
+  </div>
+
+  <div class="form-group">
+    <label for="body_text">Story Body</label>
+    {{textarea value=body_text id="body_text"}}
+  </div>
+
+  <div class="form-group">
+    <label for="image_url">Image(url)</label>
+    {{input value=image_url id="image_url"}}
+  </div>
+
+  <button {{action 'save_story'}}>Save!</button>
+</form>

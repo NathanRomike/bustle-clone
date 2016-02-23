@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('stories', {path: '/stories/:story_id'});
+  this.route('admin-new');
 });
 
 export default Router;
