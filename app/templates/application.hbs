@@ -12,9 +12,16 @@
     </div>
 
     <div class="collapse navbar-collapse" id="main-nav-bar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}Home{{/nav-link-to}}
         {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}Map{{/nav-link-to}}
+        {{#bs-dropdown}}
+          {{#bs-dropdown-toggle}}About Us{{/bs-dropdown-toggle}}
+          {{#bs-dropdown-menu}}
+              <li>Stuff</li>
+              <li>More</li>
+          {{/bs-dropdown-menu}}
+        {{/bs-dropdown}}
         </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

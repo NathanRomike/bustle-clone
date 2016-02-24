@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         headline_long: this.get('headline_long'),
         headline_short: this.get('headline_short'),
         image_url: this.get('image_url'),
-        id: this.get('headline_short').replace(/&|\+|\s|["<>#%{}|^~\[\]`\\]/, "-"),
+        id: this.get('headline_short').replace(/&|\+|\s|["<>#%{}|^~\[\]`\\]/g, "-"),
       };
       this.sendAction('save_story', params);
     },

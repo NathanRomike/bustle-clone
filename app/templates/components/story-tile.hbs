@@ -1,5 +1,6 @@
-<div class="col-md-4">
+<div class="col-sm-4">
   {{#link-to 'stories' story.id}}
+  <h5>{{story.category}}</h5>
   <img src={{story.image_url}} alt={{story.headline_short}}/>
   <h2>{{story.headline_short}}</h2>
   {{/link-to}}
@@ -8,3 +9,4 @@
     <p class="timestamp pull-right">{{moment-from-now  story.creation_datetime}}</p>
   </div>
 </div>
+<div class="clearfix visible-md-block visible-sm-block visible-xs-block"></div>
