@@ -6,6 +6,22 @@ h5 {
   position: absolute;
   display: block;
   margin: 10px;
+  color: white;
+  text-shadow: 2px 2px 2px grey;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+
+.detail {
+    color: #979797;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 1px;
+    padding-bottom: 20px;
 }
 
 .dropdown {

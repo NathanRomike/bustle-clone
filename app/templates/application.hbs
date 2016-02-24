@@ -1,28 +1,35 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#main-nav-bar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{#link-to 'index' class="navbar-brand"}}BustleClone{{/link-to}}
+      <a class="navbar-brand" href="/">BustleClone</a>
     </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="news">News</a></li>
+        <li><a href="entertainment">Entertainment</a></li>
+        <li><a href="fashion">Fashion & Beauty</a></li>
+        <li><a href="lifestyle">Lifestyle</a></li>
+        <li><a href="books">Books</a></li>
+        <li class="nav-divider"></li>
 
-    <div class="collapse navbar-collapse" id="main-nav-bar">
+      </ul>
       <ul class="nav navbar-nav navbar-right">
-        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}Home{{/nav-link-to}}
-        {{#nav-link-to 'index' data-toggle='collapse' data-target='#main-nav-bar'}}Map{{/nav-link-to}}
-        {{#bs-dropdown}}
-          {{#bs-dropdown-toggle}}About Us{{/bs-dropdown-toggle}}
-          {{#bs-dropdown-menu}}
-              <li>Stuff</li>
-              <li>More</li>
-          {{/bs-dropdown-menu}}
-        {{/bs-dropdown}}
-        </ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
